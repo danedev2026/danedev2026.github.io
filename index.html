@@ -1,42 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dane Morgan Apps - Legal</title>
-<style>
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 600px;
-    margin: 60px auto;
-    padding: 20px;
-    line-height: 1.6;
-    color: #222;
-    background: #fafafa;
-  }
-  h1 { color: #111; }
-  ul { list-style: none; padding: 0; }
-  li { margin: 12px 0; padding: 12px; background: white; border-radius: 6px; border: 1px solid #e0e0e0; }
-  a { color: #0366d6; text-decoration: none; font-weight: 500; }
-  a:hover { text-decoration: underline; }
-  .app-name { font-size: 1.1em; }
-  .app-desc { color: #666; font-size: 0.9em; margin-top: 4px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dane Dev — Indie Mobile Apps & Games</title>
+    <meta name="description" content="Independent mobile apps and games from the UK. Including Idle Coffee Tycoon and Loudest Alarm.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1410 0%, #2a1f17 100%);
+            color: #e8dccf;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            color: #d4a574;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #a89684;
+        }
+
+        h2 {
+            color: #d4a574;
+            font-size: 1.5em;
+            margin: 40px 0 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #3a2f25;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid #3a2f25;
+            padding: 28px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-2px);
+            border-color: #d4a574;
+        }
+
+        .app-card h3 {
+            color: #f0c896;
+            font-size: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        .app-card .status {
+            display: inline-block;
+            font-size: 0.75em;
+            padding: 3px 10px;
+            border-radius: 12px;
+            margin-left: 8px;
+            vertical-align: middle;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status.live {
+            background: #2d4a2b;
+            color: #a3d39c;
+        }
+
+        .status.testing {
+            background: #4a3f2b;
+            color: #d4c19c;
+        }
+
+        .app-card p {
+            color: #c4b5a4;
+            margin: 12px 0;
+        }
+
+        .app-links {
+            margin-top: 16px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .app-links a {
+            color: #f0c896;
+            text-decoration: none;
+            font-size: 0.95em;
+            padding: 8px 0;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .app-links a:hover {
+            border-bottom-color: #f0c896;
+        }
+
+        .about {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 24px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .about p {
+            color: #c4b5a4;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #3a2f25;
+            text-align: center;
+            font-size: 0.9em;
+            color: #8a7a6a;
+        }
+
+        footer a {
+            color: #d4a574;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 6px 0;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+        }
+    </style>
 </head>
 <body>
-<h1>Dane Morgan Apps - Legal</h1>
-<p>Privacy policies and legal pages for apps developed by Dane Morgan.</p>
+    <div class="container">
+        <header>
+            <h1>Dane Dev</h1>
+            <p class="tagline">Indie mobile apps and games, built with care from the UK.</p>
+        </header>
 
-<ul>
-  <li>
-    <div class="app-name"><a href="loudest-alarm/privacy.html">Loudest Alarm Clock Ever</a></div>
-    <div class="app-desc">Privacy Policy</div>
-  </li>
-  <li>
-    <div class="app-name"><a href="coffee-empire/privacy.html">Idle Coffee Empire</a></div>
-    <div class="app-desc">Privacy Policy (coming soon)</div>
-  </li>
-</ul>
+        <h2>Apps & Games</h2>
 
+        <div class="app-card">
+            <h3>Idle Coffee Tycoon <span class="status live">Live</span></h3>
+            <p>A relaxing idle game where you build your coffee empire from a humble street cart all the way to a cosmic brewery among the stars. Brew, upgrade, prestige, and climb the weekly leaderboards.</p>
+            <div class="app-links">
+                <a href="https://play.google.com/store/apps/details?id=com.dane.coffeeempire">Get it on Google Play →</a>
+                <a href="coffee-tycoon/privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <h3>Loudest Alarm <span class="status testing">In Testing</span></h3>
+            <p>An alarm clock app designed to actually wake you up. Currently in closed testing.</p>
+            <div class="app-links">
+                <a href="loudest-alarm/privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+
+        <h2>About</h2>
+        <div class="about">
+            <p>Dane Dev is a one-person indie studio based in the UK, making mobile apps and games for Android. Each project is built, designed, and supported by a single developer who cares about getting the details right.</p>
+        </div>
+
+        <footer>
+            <p>Contact: <a href="mailto:danemorgan96@gmail.com">danemorgan96@gmail.com</a></p>
+            <p>&copy; 2026 Dane Dev. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
